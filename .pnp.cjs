@@ -29,6 +29,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["postcss", "npm:8.4.21"],\
+            ["prettier", "npm:2.8.4"],\
+            ["prettier-plugin-tailwindcss", "virtual:b7c8c2746d7d90b689617da78a19466e4d526568cb46887bcae6b07d46b42c7e48a7f790fdfc335a88c8750f9c5e533604f2e83a0d01fa3ef256974a7232d807#npm:0.2.3"],\
             ["tailwindcss", "virtual:b7c8c2746d7d90b689617da78a19466e4d526568cb46887bcae6b07d46b42c7e48a7f790fdfc335a88c8750f9c5e533604f2e83a0d01fa3ef256974a7232d807#npm:3.2.4"]\
           ],\
           "linkType": "SOFT"\
@@ -1329,6 +1331,97 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["prettier", [\
+        ["npm:2.8.4", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.8.4-ba64a351d1-c173064bf3.zip/node_modules/prettier/",\
+          "packageDependencies": [\
+            ["prettier", "npm:2.8.4"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["prettier-plugin-tailwindcss", [\
+        ["npm:0.2.3", {\
+          "packageLocation": "./.yarn/cache/prettier-plugin-tailwindcss-npm-0.2.3-63f9c9ae02-f43599b2b0.zip/node_modules/prettier-plugin-tailwindcss/",\
+          "packageDependencies": [\
+            ["prettier-plugin-tailwindcss", "npm:0.2.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b7c8c2746d7d90b689617da78a19466e4d526568cb46887bcae6b07d46b42c7e48a7f790fdfc335a88c8750f9c5e533604f2e83a0d01fa3ef256974a7232d807#npm:0.2.3", {\
+          "packageLocation": "./.yarn/__virtual__/prettier-plugin-tailwindcss-virtual-8ee9f814a7/0/cache/prettier-plugin-tailwindcss-npm-0.2.3-63f9c9ae02-f43599b2b0.zip/node_modules/prettier-plugin-tailwindcss/",\
+          "packageDependencies": [\
+            ["prettier-plugin-tailwindcss", "virtual:b7c8c2746d7d90b689617da78a19466e4d526568cb46887bcae6b07d46b42c7e48a7f790fdfc335a88c8750f9c5e533604f2e83a0d01fa3ef256974a7232d807#npm:0.2.3"],\
+            ["@ianvs/prettier-plugin-sort-imports", null],\
+            ["@prettier/plugin-php", null],\
+            ["@prettier/plugin-pug", null],\
+            ["@shopify/prettier-plugin-liquid", null],\
+            ["@shufo/prettier-plugin-blade", null],\
+            ["@trivago/prettier-plugin-sort-imports", null],\
+            ["@types/ianvs__prettier-plugin-sort-imports", null],\
+            ["@types/prettier", null],\
+            ["@types/prettier-plugin-astro", null],\
+            ["@types/prettier-plugin-css-order", null],\
+            ["@types/prettier-plugin-import-sort", null],\
+            ["@types/prettier-plugin-jsdoc", null],\
+            ["@types/prettier-plugin-organize-attributes", null],\
+            ["@types/prettier-plugin-organize-imports", null],\
+            ["@types/prettier-plugin-style-order", null],\
+            ["@types/prettier-plugin-svelte", null],\
+            ["@types/prettier-plugin-twig-melody", null],\
+            ["@types/prettier__plugin-php", null],\
+            ["@types/prettier__plugin-pug", null],\
+            ["@types/shopify__prettier-plugin-liquid", null],\
+            ["@types/shufo__prettier-plugin-blade", null],\
+            ["@types/trivago__prettier-plugin-sort-imports", null],\
+            ["prettier", "npm:2.8.4"],\
+            ["prettier-plugin-astro", null],\
+            ["prettier-plugin-css-order", null],\
+            ["prettier-plugin-import-sort", null],\
+            ["prettier-plugin-jsdoc", null],\
+            ["prettier-plugin-organize-attributes", null],\
+            ["prettier-plugin-organize-imports", null],\
+            ["prettier-plugin-style-order", null],\
+            ["prettier-plugin-svelte", null],\
+            ["prettier-plugin-twig-melody", null]\
+          ],\
+          "packagePeers": [\
+            "@ianvs/prettier-plugin-sort-imports",\
+            "@prettier/plugin-php",\
+            "@prettier/plugin-pug",\
+            "@shopify/prettier-plugin-liquid",\
+            "@shufo/prettier-plugin-blade",\
+            "@trivago/prettier-plugin-sort-imports",\
+            "@types/ianvs__prettier-plugin-sort-imports",\
+            "@types/prettier-plugin-astro",\
+            "@types/prettier-plugin-css-order",\
+            "@types/prettier-plugin-import-sort",\
+            "@types/prettier-plugin-jsdoc",\
+            "@types/prettier-plugin-organize-attributes",\
+            "@types/prettier-plugin-organize-imports",\
+            "@types/prettier-plugin-style-order",\
+            "@types/prettier-plugin-svelte",\
+            "@types/prettier-plugin-twig-melody",\
+            "@types/prettier",\
+            "@types/prettier__plugin-php",\
+            "@types/prettier__plugin-pug",\
+            "@types/shopify__prettier-plugin-liquid",\
+            "@types/shufo__prettier-plugin-blade",\
+            "@types/trivago__prettier-plugin-sort-imports",\
+            "prettier-plugin-astro",\
+            "prettier-plugin-css-order",\
+            "prettier-plugin-import-sort",\
+            "prettier-plugin-jsdoc",\
+            "prettier-plugin-organize-attributes",\
+            "prettier-plugin-organize-imports",\
+            "prettier-plugin-style-order",\
+            "prettier-plugin-svelte",\
+            "prettier-plugin-twig-melody",\
+            "prettier"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["promise-inflight", [\
         ["npm:1.0.1", {\
           "packageLocation": "./.yarn/cache/promise-inflight-npm-1.0.1-5bb925afac-2274948309.zip/node_modules/promise-inflight/",\
@@ -1606,6 +1699,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["tailwind", "workspace:."],\
             ["postcss", "npm:8.4.21"],\
+            ["prettier", "npm:2.8.4"],\
+            ["prettier-plugin-tailwindcss", "virtual:b7c8c2746d7d90b689617da78a19466e4d526568cb46887bcae6b07d46b42c7e48a7f790fdfc335a88c8750f9c5e533604f2e83a0d01fa3ef256974a7232d807#npm:0.2.3"],\
             ["tailwindcss", "virtual:b7c8c2746d7d90b689617da78a19466e4d526568cb46887bcae6b07d46b42c7e48a7f790fdfc335a88c8750f9c5e533604f2e83a0d01fa3ef256974a7232d807#npm:3.2.4"]\
           ],\
           "linkType": "SOFT"\

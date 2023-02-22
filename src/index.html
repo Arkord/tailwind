@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="../dist/css/output.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tailwind</title>
-  <link rel="stylesheet" href="../dist/css/output.css" />
-</head>
-
-<body>
-  <figure class="md:flex bg-slate-200 rounded-none p-8 md:p-0 dark:bg-slate-800">
-   
-    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-      <blockquote>
-        <p class="dark:text-slate-50 text-lg font-medium">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          eius vel labore, iure ea iste, impedit adipisci doloremque
-          laudantium, eveniet nihil temporibus quos. Quam sequi facilis
-          doloribus error at asperiores.
-        </p>
-      </blockquote>
-      <figcaption class="font-medium">
-        <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
-        <div class="text-slate-700 dark:text-slate-500">
-          Staff Engineer, Algolia
-        </div>
-      </figcaption>
+  <body>
+    <div class="bg-slate-800 text-orange-400">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta
+      repellat, similique libero architecto minima pariatur dicta esse.
+      Blanditiis maiores architecto ipsum ratione quia quo animi fuga alias
+      saepe perspiciatis.
     </div>
-    <img src="./assets/img/avatar.jpg" alt="avatar" class="w-24 h-24 md:w-64 md:h-auto md:rounded-none rounded-full mx-auto" />
-  </figure>
-</body>
 
+    <figure
+      class="rounded-none bg-slate-200 p-8 transition duration-500 dark:bg-slate-800 md:flex md:p-0"
+    >
+      <div class="space-y-4 pt-6 text-center md:p-8 md:text-left">
+        <blockquote>
+          <p class="text-lg font-medium dark:text-slate-50">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+            eius vel labore, iure ea iste, impedit adipisci doloremque
+            laudantium, eveniet nihil temporibus quos. Quam sequi facilis
+            doloribus error at asperiores.
+          </p>
+        </blockquote>
+        <figcaption class="font-medium">
+          <div class="text-sky-500 dark:text-sky-400">Sarah Dayan</div>
+          <div class="text-slate-700 dark:text-slate-500">
+            Staff Engineer, Algolia
+          </div>
+        </figcaption>
+      </div>
+      <img
+        src="./assets/img/avatar.jpg"
+        alt="avatar"
+        class="mx-auto h-24 w-24 rounded-full md:h-auto md:w-64 md:rounded-none"
+      />
+    </figure>
+
+    <button
+      id="switch"
+      class="m-5 bg-slate-200 p-5 text-slate-900 dark:bg-slate-700 dark:text-slate-200"
+    >
+      Switch to Dark Mode
+    </button>
+
+    <script>
+      let btn = document.querySelector("#switch");
+      btn.addEventListener("click", function () {
+        let root = document.documentElement.classList.add("dark");
+      });
+    </script>
+  </body>
 </html>
