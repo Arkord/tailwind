@@ -1,9 +1,13 @@
 @tailwind base;
 @tailwind components;
-
-.custom-card {
-    @apply w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white
- }
-
 @tailwind utilities;
 
+@layer components {
+  .perspective-400 {
+    perspective: 400px;
+  }
+}
+
+.custom-card {
+  @apply flex h-9 w-9 items-center justify-center rounded-lg text-slate-700 peer-checked:bg-slate-900 peer-checked:font-semibold peer-checked:text-white;
+}
