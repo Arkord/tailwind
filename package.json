@@ -1,5 +1,8 @@
 {
   "name": "tailwind",
+  "scripts": {
+    "tailwind": "yarn tailwindcss -i ./src/input.css -o ./dist/css/output.css --watch"
+  },
   "packageManager": "yarn@3.4.1",
   "devDependencies": {
     "postcss": "^8.4.21",

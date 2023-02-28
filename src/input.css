@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer components {
-  .perspective-400 {
-    perspective: 400px;
+  .price-table {
+    @apply m-2 w-80 shrink-0 rounded-md p-4 text-center text-gray-700 shadow-lg dark:bg-slate-800 dark:text-slate-400;
+  }
+  .price-table-h {
+    @apply m-2 w-80 shrink-0 rounded-md bg-pink-600 p-4 text-center text-white shadow-lg dark:text-slate-300;
   }
 }
 
